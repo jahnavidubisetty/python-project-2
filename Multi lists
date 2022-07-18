@@ -1,0 +1,16 @@
+def mult_lists(a,b):
+    c=[ ]
+    x=len(a)
+    y=len(b)
+    if(x==y):
+       for i in range(x):
+          for j in range(y):
+            if(i==j):
+                c.append(a[i]*b[j])
+       return sum(c)
+    else:
+         return "lengths are not equal"
+    
+a=list(input("enter a list a:"))
+b=list(input("enter a list b:"))
+print(mult_lists(a,b)) 
