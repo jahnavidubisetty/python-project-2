@@ -1,0 +1,8 @@
+def remove_duplicates(s):
+  st=""
+  for i in s:
+      if i not in st:
+          st=st+i
+  return st
+s=input("Enter a string:")
+print(remove_duplicates(s))
